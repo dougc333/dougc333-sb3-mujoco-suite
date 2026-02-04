@@ -1,0 +1,2 @@
+[console_scripts]
+train-ant = rl_core.train:main

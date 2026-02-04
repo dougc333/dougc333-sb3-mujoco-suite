@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: sb3-mujoco-suite
+Version: 0.1.0
+Requires-Python: >=3.10
+Requires-Dist: stable-baselines3>=2.3.0
+Requires-Dist: gymnasium[mujoco]>=0.29.1
+Requires-Dist: mujoco>=3.0.0
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: tensorboard
+Requires-Dist: imageio
+Requires-Dist: pyyaml>=6.0.1

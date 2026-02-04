@@ -1,0 +1,40 @@
+run_name: "ant_ppo"
+
+env:
+  id: "Ant-v4"
+  n_train_envs: 8
+  n_eval_envs: 4
+  seed: 0
+  clip_obs: 10.0
+  norm_obs: true
+  norm_reward_train: false
+  norm_reward_eval: false
+
+train:
+  total_timesteps: 4000000
+
+algo:
+  device: "auto"
+  verbose: 1
+  n_steps: 2048
+  batch_size: 128
+  n_epochs: 10
+  learning_rate: 1.0e-4
+  gamma: 0.99
+  gae_lambda: 0.95
+  clip_range: 0.2
+  ent_coef: 0.001
+  vf_coef: 0.5
+  max_grad_norm: 0.5
+  target_kl: 0.04
+
+metrics:
+  horizon: 1000
+  entropy_batch: 2048
+  window: 200
+  earlystop_frac: 0.8
+  earlystop_patience: 3
+
+checkpoint:
+  every_steps: 500000
+
