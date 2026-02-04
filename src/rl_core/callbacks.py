@@ -23,6 +23,10 @@ class JsonlMetricsCallback(BaseCallback):
         self.every_rollout = every_rollout
         os.makedirs(os.path.dirname(out_path), exist_ok=True)
         self._t0 = None
+  
+    def _on_step(self) -> bool:
+        # Required by BaseCallback (abstract). We don't need per-step logic.
+        return True
 
     def _on_training_start(self) -> None:
         self._t0 = time.time()
