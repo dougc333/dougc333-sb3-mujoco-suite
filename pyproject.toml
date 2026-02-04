@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sb3-mujoco-suite"
+version = "0.1.0"
+dependencies = [
+    "stable-baselines3",
+    "gymnasium[mujoco]",
+    "torch",
+    "numpy",
+    "tensorboard"
+]
+
+[project.scripts]
+train-ant = "rl_core.train:main"
+
