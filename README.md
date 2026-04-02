@@ -1,7 +1,7 @@
 
 
 
-how to monitor lipschitz?
+how to monitor lipschitz smoothness. Lipschitz condition means no corners like ReLU.
 compare
   weight decay
   gradient clipping
