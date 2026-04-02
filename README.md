@@ -1,5 +1,7 @@
 
 
+Video files under experiments & old_videos
+Delete after 5m
 
 how to monitor lipschitz smoothness. Lipschitz condition means no corners like ReLU.
 compare
